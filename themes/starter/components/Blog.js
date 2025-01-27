@@ -11,7 +11,7 @@ export const Blog = ({ posts }) => {
   return (
     <>
       {/* <!-- ====== Blog Section Start --> */}
-      <section className='bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]'>
+      <section className='bg-white pb-0 pt-20 dark:bg-dark lg:pb-0 lg:pt-[120px]'>
         <div className='container mx-auto'>
           {/* 区块标题文字 */}
           <div className='-mx-4 flex flex-wrap justify-center'>
@@ -73,6 +73,19 @@ export const Blog = ({ posts }) => {
         </div>
       </section>
       {/* <!-- ====== Blog Section End --> */}
+      {/* 更多按钮 */}
+      <div className="w-full h-20 bg-white dark:bg-dark">
+        <div className='container mx-auto flex justify-center mb-4'>
+          <Link 
+                className='bg-primary text-white px-6 py-2 rounded-xl flex items-center hover:bg-primary/80 transition-colors' 
+                href={'/archive'}
+              >
+                <span>更多</span>
+                <i className='ml-2 fas fa-arrow-right' />
+            </Link>
+          </div>
+      </div>
     </>
   )
 }
+

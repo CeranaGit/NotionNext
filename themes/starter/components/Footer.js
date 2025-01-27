@@ -6,10 +6,10 @@ import SmartLink from '@/components/SmartLink'
 
 /* eslint-disable @next/next/no-img-element */
 export const Footer = props => {
-  const footerPostCount = siteConfig('STARTER_FOOTER_POST_COUNT', 2)
-  const latestPosts = props?.latestPosts
-    ? props?.latestPosts.slice(0, footerPostCount)
-    : []
+  // const footerPostCount = siteConfig('STARTER_FOOTER_POST_COUNT', 2)
+  // const latestPosts = props?.latestPosts
+  //   ? props?.latestPosts.slice(0, footerPostCount)
+  //   : []
   const STARTER_FOOTER_LINK_GROUP = siteConfig('STARTER_FOOTER_LINK_GROUP', [])
   return (
     <>
@@ -64,13 +64,13 @@ export const Footer = props => {
             })}
 
             {/* 页脚右侧最新博文 */}
-            <div className='w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12'>
+            {/* <div className='w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12'>
               <div className='mb-10 w-full'>
                 <h4 className='mb-9 text-lg font-semibold text-white'>
                   {siteConfig('STARTER_FOOTER_BLOG_LATEST_TITLE')}
-                </h4>
+                </h4> */}
                 {/* 展示两条最新博客文章 */}
-                <div className='flex flex-col gap-8'>
+                {/* <div className='flex flex-col gap-8'>
                   {latestPosts?.map((item, index) => {
                     return (
                       <SmartLink
@@ -93,7 +93,7 @@ export const Footer = props => {
                   })}
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -129,7 +129,7 @@ export const Footer = props => {
                   </div>
                 </div>
               </div>
-              <div className='w-full px-4 md:w-1/3 lg:w-1/2'>
+              {/* <div className='w-full px-4 md:w-1/3 lg:w-1/2'>
                 <div className='my-1 flex justify-center md:justify-end'>
                   <p className='text-base text-gray-7'>
                     Designed and Developed by
@@ -142,7 +142,7 @@ export const Footer = props => {
                     </a>
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

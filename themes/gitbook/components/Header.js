@@ -60,7 +60,7 @@ export default function Header(props) {
     links = customMenu
   }
 
-  const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+  // const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 
   return (
     <div id='top-nav' className={'fixed top-0 w-full z-20 ' + className}>
@@ -80,10 +80,10 @@ export default function Header(props) {
             </div>
           </div>
 
-          {/* 右侧 */}
+          右侧
           <div className='flex items-center gap-4'>
             {/* 登录相关 */}
-            {enableClerk && (
+            {/* {enableClerk && (
               <>
                 <SignedOut>
                   <SignInButton mode='modal'>
@@ -94,7 +94,7 @@ export default function Header(props) {
                 </SignedOut>
                 <UserButton />
               </>
-            )}
+            )} */}
             <DarkModeButton className='text-sm items-center h-full hidden md:flex' />
             <SearchInput className='hidden md:flex md:w-52 lg:w-72' />
             {/* 折叠按钮、仅移动端显示 */}
