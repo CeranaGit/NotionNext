@@ -10,18 +10,19 @@ const CONFIG = {
 
   // 英雄区块导航
   STARTER_HERO_ENABLE: true, // 开启英雄区
-  STARTER_HERO_TITLE_1: '智能化解決方案為企業開啟數位新篇章', // 英雄区文字
+  STARTER_HERO_TITLE_1: '客製化方案為企業開啟數位新篇章', // 英雄区文字
   STARTER_HERO_TITLE_2: '我們提供專業且高效的解決方案，助您輕鬆駕馭數位化挑戰', // 英雄区文字
   // 英雄区两个按钮，如果TEXT留空则隐藏按钮
   STARTER_HERO_BUTTON_1_TEXT: '立即聯繫', // 英雄区按钮
   STARTER_HERO_BUTTON_1_URL:
     '/', // 英雄区按钮
   STARTER_HERO_BUTTON_2_TEXT: '合作案例', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: '/', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_URL: '/archive', // 英雄区按钮
   STARTER_HERO_BUTTON_2_ICON: '', // 英雄区按钮2的图标，不需要则留空
 
   // 英雄区配图，如需隐藏，改为空值即可 ''
   STARTER_HERO_PREVIEW_IMAGE: '', // 产品预览图 ，默认读取public目录下图片
+  STARTER_HERO_BACKGROUND_IMAGE: '/images/starter/hero/background.jpg', // 英雄区背景图
   STARTER_HERO_BANNER_IMAGE: '', // hero区下方的全宽图
 
   // 顶部右侧导航暗流
@@ -223,14 +224,14 @@ const CONFIG = {
   STARTER_CONTACT_MSG_EXTERNAL_URL: 'YOUR_FORM_URL', 
 
   // 合作伙伴的图标 - 建議放上實際合作過的企業或技術夥伴
-  STARTER_BRANDS_ENABLE: true,
+  STARTER_BRANDS_ENABLE: false,
   STARTER_BRANDS: [
-    {
-      IMAGE: '/images/starter/brands/partner1.svg',
-      IMAGE_WHITE: '/images/starter/brands/partner1-white.svg',
-      URL: 'https://partner1.com/',
-      TITLE: 'Partner 1'
-    },
+    // {
+    //   IMAGE: '/images/starter/brands/partner1.svg',
+    //   IMAGE_WHITE: '/images/starter/brands/partner1-white.svg',
+    //   URL: 'https://partner1.com/',
+    //   TITLE: 'Partner 1'
+    // },
     // ... 其他合作夥伴
   ],
 

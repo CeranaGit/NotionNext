@@ -14,8 +14,16 @@ export const Hero = props => {
       {/* <!-- ====== Hero Section Start --> */}
       <div
         id='home'
-        className='relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]'>
-        <div className='container'>
+        className='relative overflow-hidden pt-48 md:pt-64 pb-48 md:pb-64'
+        style={{
+          backgroundImage: `url(${siteConfig('STARTER_HERO_BACKGROUND_IMAGE', null, config)})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}>
+        {/* Add a dark overlay for better text readability */}
+        <div className='absolute inset-0 bg-black/60'></div>
+        <div className='container relative z-10'>
           <div className='-mx-4 flex flex-wrap items-center'>
             <div className='w-full px-4'>
               <div
