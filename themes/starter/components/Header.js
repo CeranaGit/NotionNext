@@ -1,8 +1,8 @@
 /* eslint-disable no-unreachable */
-import DashboardButton from '@/components/ui/dashboard/DashboardButton'
-import { siteConfig } from '@/lib/config'
+// import DashboardButton from '@/components/ui/dashboard/DashboardButton'
+// import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
-import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+// import { SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 import throttle from 'lodash.throttle'
 import SmartLink from '@/components/SmartLink'
 import { useRouter } from 'next/router'
@@ -65,6 +65,7 @@ export const Header = props => {
               {/* 中间菜单 */}
               <MenuList {...props} />
 
+              <div className='flex-1'></div>
               {/* 右侧功能 */}
               <div className='flex items-center gap-4 justify-end pr-16 lg:pr-0'>
                 {/* 深色模式切换 */}

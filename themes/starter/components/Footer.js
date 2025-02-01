@@ -10,7 +10,7 @@ export const Footer = props => {
   // const latestPosts = props?.latestPosts
   //   ? props?.latestPosts.slice(0, footerPostCount)
   //   : []
-  const STARTER_FOOTER_LINK_GROUP = siteConfig('STARTER_FOOTER_LINK_GROUP', [])
+  // const STARTER_FOOTER_LINK_GROUP = siteConfig('STARTER_FOOTER_LINK_GROUP', [])
   return (
     <>
       {/* <!-- ====== Footer Section Start --> */}
@@ -68,9 +68,9 @@ export const Footer = props => {
               <div className='mb-10 w-full'>
                 <h4 className='mb-9 text-lg font-semibold text-white'>
                   {siteConfig('STARTER_FOOTER_BLOG_LATEST_TITLE')}
-                </h4> */}
-                {/* 展示两条最新博客文章 */}
-                {/* <div className='flex flex-col gap-8'>
+                </h4>
+                展示两条最新博客文章
+                <div className='flex flex-col gap-8'>
                   {latestPosts?.map((item, index) => {
                     return (
                       <SmartLink
@@ -96,66 +96,43 @@ export const Footer = props => {
             </div> */}
           </div>
         </div>
-
         {/* 底部版权信息相关 */}
-
-        <div className='mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]'>
+        <div className='mt-8 border-t border-[#8890A4] border-opacity-40 py-6'>
           <div className='container'>
-            <div className='-mx-4 flex flex-wrap'>
-              <div className='w-full px-4 md:w-2/3 lg:w-1/2'>
-                <div className='my-1'>
-                  <div className='-mx-3 flex items-center justify-center md:justify-start'>
-                    <SmartLink
-                      href={siteConfig('STARTER_FOOTER_PRIVACY_POLICY_URL', '')}
-                      className='px-3 text-base text-gray-7 hover:text-white hover:underline'>
-                      {siteConfig('STARTER_FOOTER_PRIVACY_POLICY_TEXT')}
-                    </SmartLink>
-                    <SmartLink
-                      href={siteConfig(
-                        'STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_URL', ''
-                      )}
-                      className='px-3 text-base text-gray-7 hover:text-white hover:underline'>
-                      {siteConfig('STARTER_FOOTER_PRIVACY_LEGAL_NOTICE_TEXT')}
-                    </SmartLink>
-                    <SmartLink
-                      href={siteConfig(
-                        'STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL', ''
-                      )}
-                      className='px-3 text-base text-gray-7 hover:text-white hover:underline'>
-                      {siteConfig(
-                        'STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT', ''
-                      )}
-                    </SmartLink>
-                  </div>
-                </div>
+            <div className='flex flex-col md:flex-row justify-between items-center gap-4'>
+              <div className='flex flex-col md:flex-row items-center gap-4 text-sm text-gray-7'>
+                <span>© {new Date().getFullYear()} {siteConfig('TITLE')}. All Rights Reserved.</span>
+                <span className='hidden md:inline'>|</span>
+                <span>營業人名稱：東蜂工作室</span>
+                <span className='hidden md:inline'>|</span>
+                <span>統一編號：95292891</span>
               </div>
-              {/* <div className='w-full px-4 md:w-1/3 lg:w-1/2'>
-                <div className='my-1 flex justify-center md:justify-end'>
-                  <p className='text-base text-gray-7'>
-                    Designed and Developed by
-                    <a
-                      href='https://github.com/tangly1024/NotionNext'
-                      rel='nofollow noopner noreferrer'
-                      target='_blank'
-                      className='px-1 text-gray-1 hover:underline'>
-                      NotionNext {siteConfig('VERSION')}
-                    </a>
-                  </p>
-                </div>
-              </div> */}
+              
+              <div className='flex items-center gap-4 text-sm'>
+                <SmartLink
+                  href={siteConfig('STARTER_FOOTER_PRIVACY_POLICY_URL', '')}
+                  className='text-gray-7 hover:text-white hover:underline'>
+                  {siteConfig('STARTER_FOOTER_PRIVACY_POLICY_TEXT', '隱私權政策')}
+                </SmartLink>
+                <SmartLink
+                  href={siteConfig('STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_URL', '')}
+                  className='text-gray-7 hover:text-white hover:underline'>
+                  {siteConfig('STARTER_FOOTER_PRIVACY_TERMS_OF_SERVICE_TEXT', '服務條款')}
+                </SmartLink>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Footer 背景 */}
         <div>
-          <span className='absolute left-0 top-0 z-[-1]'>
+          {/* <span className='absolute left-0 top-0 z-[-1]'>
             <img src='/images/starter/footer/shape-1.svg' alt='' />
           </span>
 
           <span className='absolute bottom-0 right-0 z-[-1]'>
             <img src='/images/starter/footer/shape-3.svg' alt='' />
-          </span>
+          </span> */}
 
           <span className='absolute right-0 top-0 z-[-1]'>
             <SVGFooterCircleBG />

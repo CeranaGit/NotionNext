@@ -56,7 +56,7 @@ export const Logo = props => {
             }}
             src={logo}
             alt='logo'
-            className='header-logo mr-1 h-8'
+            className='header-logo mr-1 h-8 rounded-md'
           />
         )}
         {/* logo文字 */}
@@ -64,7 +64,7 @@ export const Logo = props => {
           onClick={() => {
             router.push('/')
           }}
-          className={`${logoTextColor} logo dark:text-white py-1.5 header-logo-text whitespace-nowrap text-2xl font-semibold`}>
+          className={`${logoTextColor} logo dark:text-white px-1 py-1.5 header-logo-text whitespace-nowrap text-xl font-semibold font-sans`}>
           {siteConfig('TITLE')}
         </span>
       </div>
