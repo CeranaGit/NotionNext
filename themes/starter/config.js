@@ -197,9 +197,9 @@ const CONFIG = {
       STARTER_TEAM_ITEM_DESCRIPTION: '物聯網工程師'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/CTHua.jpg',
-      STARTER_TEAM_ITEM_NICKNAME: 'CTHua',
-      STARTER_TEAM_ITEM_DESCRIPTION: '前端工程師'
+      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/Peter.jpg',
+      STARTER_TEAM_ITEM_NICKNAME: 'Peter Chang',
+      STARTER_TEAM_ITEM_DESCRIPTION: '軟體工程師'
     }
   ],
 
