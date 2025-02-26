@@ -177,9 +177,9 @@ const CONFIG = {
       STARTER_TEAM_ITEM_DESCRIPTION: '產品經理'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/YJack.jpg',
-      STARTER_TEAM_ITEM_NICKNAME: 'YJack Zheng',
-      STARTER_TEAM_ITEM_DESCRIPTION: '專案長'
+      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/YJack.jpeg',
+      STARTER_TEAM_ITEM_NICKNAME: 'Jack Zheng',
+      STARTER_TEAM_ITEM_DESCRIPTION: '技術負責人'
     },
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/Mark.jpg',
@@ -189,7 +189,7 @@ const CONFIG = {
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/Yan.png',
       STARTER_TEAM_ITEM_NICKNAME: 'Yan Chiu',
-      STARTER_TEAM_ITEM_DESCRIPTION: '區塊鏈工程師'
+      STARTER_TEAM_ITEM_DESCRIPTION: 'Web3 工程師'
     },
     {
       STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/Ian.jpg',
