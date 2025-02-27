@@ -48,7 +48,7 @@ export const Logo = props => {
     <div className='w-60 max-w-full px-4'>
       <div className='navbar-logo flex items-center w-full py-5 cursor-pointer'>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        {logo && (
+        {/*{logo && (
           <LazyImage
             priority
             onClick={() => {
@@ -58,7 +58,16 @@ export const Logo = props => {
             alt='logo'
             className='header-logo mr-1 h-8 rounded-md'
           />
-        )}
+        )}*/}
+        <LazyImage
+            priority
+            onClick={() => {
+              router.push('/')
+            }}
+            src={'/images/cerana_dc.png'}
+            alt='logo'
+            className='header-logo mr-1 h-8 rounded-md'
+          />
         {/* logo文字 */}
         <span
           onClick={() => {

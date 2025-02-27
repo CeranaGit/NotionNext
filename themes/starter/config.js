@@ -119,24 +119,24 @@ const CONFIG = {
 
   STARTER_TESTIMONIALS_ITEMS: [
     {
-      STARTER_TESTIMONIALS_ITEM_TEXT: '他們的團隊非常專業且反應迅速，幫助我們公司順利完成了數位轉型。特別是在系統整合方面，為我們節省了大量人力成本。',
+      STARTER_TESTIMONIALS_ITEM_TEXT: '他們的團隊非常專業且反應迅速，一步一步的幫住我們完成軟體規劃，並且在過程中不斷的提供專業的建議，讓我們在流程數位化的過程中，能夠更加順利。',
       STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client1.jpg',
-      STARTER_TESTIMONIALS_ITEM_NICKNAME: '張小姐',
-      STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '營運長',
-      STARTER_TESTIMONIALS_ITEM_URL: ''
-    },
-    {
-      STARTER_TESTIMONIALS_ITEM_TEXT: '在AI應用解決方案上，他們提供的建議讓我們在市場上搶得先機。團隊不僅技術能力強，更難得的是能夠從商業角度思考問題。',
-      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client2.jpg', 
-      STARTER_TESTIMONIALS_ITEM_NICKNAME: '李先生',
-      STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '執行長',
-      STARTER_TESTIMONIALS_ITEM_URL: ''
-    },
-    {
-      STARTER_TESTIMONIALS_ITEM_TEXT: '我們的物聯網專案多虧有他們的協助才能如此順利。他們提供的解決方案不僅穩定可靠，售後支援也相當完善。',
-      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client3.jpg',
-      STARTER_TESTIMONIALS_ITEM_NICKNAME: '王先生',
+      STARTER_TESTIMONIALS_ITEM_NICKNAME: '陳先生',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '製造業負責人',
+      STARTER_TESTIMONIALS_ITEM_URL: ''
+    },
+    {
+      STARTER_TESTIMONIALS_ITEM_TEXT: '溝通的時候都非常有耐心，而且有些我們沒發現的痛點也會被指出來。極力推薦！最終成品有效解決我們的問題、助教老師再也不用半夜收信來回答學生問題。',
+      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client2.jpg', 
+      STARTER_TESTIMONIALS_ITEM_NICKNAME: '鄭先生',
+      STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '大學行政人員',
+      STARTER_TESTIMONIALS_ITEM_URL: ''
+    },
+    {
+      STARTER_TESTIMONIALS_ITEM_TEXT: '他們的技術團隊不僅理解我們的需求，還能精準地將創意轉化為實際的應用程式。從提案到落地，過程順暢且專業，也成功讓我們的產品在區域競賽中奪得佳績。',
+      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client3.jpg',
+      STARTER_TESTIMONIALS_ITEM_NICKNAME: '林小姐',
+      STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '廣告相關業者',
       STARTER_TESTIMONIALS_ITEM_URL: ''
     }
   ],
@@ -187,8 +187,8 @@ const CONFIG = {
       STARTER_TEAM_ITEM_DESCRIPTION: '網站可靠性工程師'
     },
     {
-      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/Yan.png',
-      STARTER_TEAM_ITEM_NICKNAME: 'Yan Chiu',
+      STARTER_TEAM_ITEM_AVATAR: '/images/starter/team/Yen.jpg',
+      STARTER_TEAM_ITEM_NICKNAME: 'Yen Chiu',
       STARTER_TEAM_ITEM_DESCRIPTION: 'Web3 工程師'
     },
     {
