@@ -189,7 +189,7 @@ const LayoutSearch = props => {
 }
 
 /**
- * 归档页面
+ * 案例分享页面
  */
 const LayoutArchive = props => {
   const { archivePosts } = props

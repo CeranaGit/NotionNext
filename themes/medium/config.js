@@ -14,7 +14,7 @@ const CONFIG = {
   // 菜单
   MEDIUM_MENU_CATEGORY: true, // 显示分类
   MEDIUM_MENU_TAG: true, // 显示标签
-  MEDIUM_MENU_ARCHIVE: true, // 显示归档
+  MEDIUM_MENU_ARCHIVE: true, // 显示案例分享
   MEDIUM_MENU_SEARCH: true, // 显示搜索
 
   // Widget

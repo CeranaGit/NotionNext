@@ -1,9 +1,9 @@
 import PostItemCard from './PostItemCard'
 
 /**
- * 博客归档列表
+ * 博客案例分享列表
  * @param posts 所有文章
- * @param archiveTitle 归档标题
+ * @param archiveTitle 案例分享标题
  * @returns {JSX.Element}
  * @constructor
  */

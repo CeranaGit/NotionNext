@@ -9,7 +9,7 @@ const CONFIG = {
   // 默认菜单配置 （开启自定义菜单后，以下配置则失效，请在Notion中自行配置菜单）
   NOBELIUM_MENU_CATEGORY: false, // 显示分类
   NOBELIUM_MENU_TAG: true, // 显示标签
-  NOBELIUM_MENU_ARCHIVE: false, // 显示归档
+  NOBELIUM_MENU_ARCHIVE: false, // 显示案例分享
   NOBELIUM_MENU_SEARCH: true, // 显示搜索
   NOBELIUM_MENU_RSS: false, // 显示订阅
 

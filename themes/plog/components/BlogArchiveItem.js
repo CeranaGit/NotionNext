@@ -1,7 +1,7 @@
 import SmartLink from '@/components/SmartLink'
 
 /**
- * 归档分组文章
+ * 案例分享分组文章
  * @param {*} param0
  * @returns
  */

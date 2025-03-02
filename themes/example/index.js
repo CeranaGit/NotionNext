@@ -260,7 +260,7 @@ const LayoutSearch = props => {
 }
 
 /**
- * 归档列表
+ * 案例分享列表
  * @param {*} props
  * @returns 按照日期将文章分组排序
  */

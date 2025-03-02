@@ -5,7 +5,7 @@ const CONFIG = {
   // 菜单配置
   PHOTO_MENU_CATEGORY: true, // 显示分类
   PHOTO_MENU_TAG: true, // 显示标签
-  PHOTO_MENU_ARCHIVE: true, // 显示归档
+  PHOTO_MENU_ARCHIVE: true, // 显示案例分享
   PHOTO_MENU_SEARCH: true, // 显示搜索
   PHOTO_HOME_BACKGROUND: false, // 首页是否显示背景图, 默认关闭
 

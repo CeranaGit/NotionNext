@@ -9,7 +9,7 @@ const CONFIG = {
   // 菜单
   NAV_MENU_CATEGORY: true, // 显示分类
   NAV_MENU_TAG: true, // 显示标签
-  NAV_MENU_ARCHIVE: true, // 显示归档
+  NAV_MENU_ARCHIVE: true, // 显示案例分享
   NAV_MENU_SEARCH: true, // 显示搜索
 
   // Widget

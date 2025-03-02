@@ -403,7 +403,7 @@ const LayoutSearch = props => {
 }
 
 /**
- * 归档页面基本不会用到
+ * 案例分享页面基本不会用到
  * 全靠页面导航
  * @param {*} props
  * @returns

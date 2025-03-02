@@ -107,7 +107,7 @@ const CONFIG = {
   // 旧版本顶部菜单
   MAGZINE_MENU_CATEGORY: true, // 显示分类
   MAGZINE_MENU_TAG: true, // 显示标签
-  MAGZINE_MENU_ARCHIVE: true, // 显示归档
+  MAGZINE_MENU_ARCHIVE: true, // 显示案例分享
   MAGZINE_MENU_SEARCH: true, // 显示搜索
 
   MAGZINE_WIDGET_TO_TOP: true // 跳回顶部

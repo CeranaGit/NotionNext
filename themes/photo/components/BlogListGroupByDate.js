@@ -2,7 +2,7 @@ import SmartLink from '@/components/SmartLink'
 
 /**
  * 按照日期将文章分组
- * 归档页面用到
+ * 案例分享页面用到
  * @param {*} param0
  * @returns
  */

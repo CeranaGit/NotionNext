@@ -7,7 +7,7 @@ import { DynamicLayout } from '@/themes/theme'
 import { useEffect } from 'react'
 
 /**
- * 归档首页
+ * 案例分享首页
  * @param {*} props
  * @returns
  */

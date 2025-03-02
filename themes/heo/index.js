@@ -215,14 +215,14 @@ const LayoutSearch = props => {
 }
 
 /**
- * 归档
+ * 案例分享
  * @param {*} props
  * @returns
  */
 const LayoutArchive = props => {
   const { archivePosts } = props
 
-  // 归档页顶部显示条，如果是默认归档则不显示。分类详情页显示分类列表，标签详情页显示当前标签
+  // 案例分享页顶部显示条，如果是默认案例分享则不显示。分类详情页显示分类列表，标签详情页显示当前标签
 
   return (
     <div className='p-5 rounded-xl border dark:border-gray-600 max-w-6xl w-full bg-white dark:bg-[#1e1e1e]'>

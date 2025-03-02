@@ -1,7 +1,7 @@
 import SmartLink from '@/components/SmartLink'
 
 /**
- * 博客归档列表；仅归档页面使用
+ * 博客案例分享列表；仅案例分享页面使用
  * 按照日期将文章分组
  * @param {*} param0
  * @returns
