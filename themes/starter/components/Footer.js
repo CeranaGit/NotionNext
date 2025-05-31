@@ -103,7 +103,7 @@ export const Footer = props => {
               <div className='flex flex-col md:flex-row items-center gap-4 text-sm text-gray-7'>
                 <span>© {new Date().getFullYear()} {siteConfig('TITLE')}. All Rights Reserved.</span>
                 <span className='hidden md:inline'>|</span>
-                <span>營業人名稱：東蜂工作室</span>
+                <span>營業人名稱：東蜂科技</span>
                 <span className='hidden md:inline'>|</span>
                 <span>統一編號：95292891</span>
               </div>

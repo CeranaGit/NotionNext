@@ -7,9 +7,19 @@ import SmartLink from '@/components/SmartLink'
  * 用户的公告栏内容将在此显示
  **/
 export const CTA = () => {
-  if (!siteConfig('STARTER_CTA_ENABLE')) {
+  // 先獲取所有配置，確保 Hook 調用順序一致
+  const ctaEnable = siteConfig('STARTER_CTA_ENABLE')
+  const ctaTitle = siteConfig('STARTER_CTA_TITLE')
+  const ctaTitle2 = siteConfig('STARTER_CTA_TITLE_2')
+  const ctaDescription = siteConfig('STARTER_CTA_DESCRIPTION')
+  const ctaButton = siteConfig('STARTER_CTA_BUTTON')
+  const ctaButtonUrl = siteConfig('STARTER_CTA_BUTTON_URL', '')
+  const ctaButtonText = siteConfig('STARTER_CTA_BUTTON_TEXT')
+  
+  if (!ctaEnable) {
     return <></>
   }
+  
   return (
     <>
       {/* <!-- ====== CTA Section Start --> */}
@@ -20,20 +30,20 @@ export const CTA = () => {
               <div className='w-full px-4'>
                 <div className='mx-auto max-w-[570px] text-center'>
                   <h2 className='mb-2.5 text-3xl font-bold text-white md:text-[38px] md:leading-[1.44]'>
-                    <span>{siteConfig('STARTER_CTA_TITLE')}</span>
+                    <span>{ctaTitle}</span>
                     <span className='text-3xl font-normal md:text-[40px]'>
-                      {siteConfig('STARTER_CTA_TITLE_2')}
+                      {ctaTitle2}
                     </span>
                   </h2>
                   <p className='mx-auto mb-6 max-w-[515px] text-base leading-[1.5] text-white'>
-                    {siteConfig('STARTER_CTA_DESCRIPTION')}
+                    {ctaDescription}
                   </p>
-                  {siteConfig('STARTER_CTA_BUTTON') && (
+                  {ctaButton && (
                     <>
                       <SmartLink
-                        href={siteConfig('STARTER_CTA_BUTTON_URL', '')}
+                        href={ctaButtonUrl}
                         className='inline-block rounded-md border border-transparent bg-secondary px-7 py-3 text-base font-medium text-white transition hover:bg-[#0BB489]'>
-                        {siteConfig('STARTER_CTA_BUTTON_TEXT')}
+                        {ctaButtonText}
                       </SmartLink>
                     </>
                   )}
@@ -55,21 +65,21 @@ export const CTA = () => {
                 cy='442'
                 r='138'
                 stroke='white'
-                stroke-opacity='0.04'
-                stroke-width='50'
+                strokeOpacity='0.04'
+                strokeWidth='50'
               />
               <circle
                 cx='446'
                 r='39'
                 stroke='white'
-                stroke-opacity='0.04'
-                stroke-width='20'
+                strokeOpacity='0.04'
+                strokeWidth='20'
               />
               <path
                 d='M245.406 137.609L233.985 94.9852L276.609 106.406L245.406 137.609Z'
                 stroke='white'
-                stroke-opacity='0.08'
-                stroke-width='12'
+                strokeOpacity='0.08'
+                strokeWidth='12'
               />
             </svg>
           </span>
@@ -85,22 +95,22 @@ export const CTA = () => {
                 cy='5'
                 r='138'
                 stroke='white'
-                stroke-opacity='0.04'
-                stroke-width='50'
+                strokeOpacity='0.04'
+                strokeWidth='50'
               />
               <circle
                 cx='49'
                 cy='470'
                 r='39'
                 stroke='white'
-                stroke-opacity='0.04'
-                stroke-width='20'
+                strokeOpacity='0.04'
+                strokeWidth='20'
               />
               <path
                 d='M222.393 226.701L272.808 213.192L259.299 263.607L222.393 226.701Z'
                 stroke='white'
-                stroke-opacity='0.06'
-                stroke-width='13'
+                strokeOpacity='0.06'
+                strokeWidth='13'
               />
             </svg>
           </span>

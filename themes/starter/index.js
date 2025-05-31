@@ -36,7 +36,7 @@ import SmartLink from '@/components/SmartLink'
 import { ArticleLock } from './components/ArticleLock'
 import { Banner } from './components/Banner'
 import { CTA } from './components/CTA'
-import SearchInput from './components/SearchInput'
+import { SearchInput } from './components/SearchInput'
 import { SignInForm } from './components/SignInForm'
 import { SignUpForm } from './components/SignUpForm'
 import { SVG404 } from './components/svg/SVG404'
@@ -102,7 +102,6 @@ const LayoutBase = props => {
  */
 const LayoutIndex = props => {
   const count = siteConfig('STARTER_BLOG_COUNT', 3, CONFIG)
-  const { locale } = useGlobal()
   const posts = props?.allNavPages ? props.allNavPages.slice(0, count) : []
   return (
     <>
@@ -268,42 +267,49 @@ const LayoutArchive = props => (
 
 /**
  * 404页面
- * @param {*} props
+ * @param {*} _props
  * @returns
  */
-const Layout404 = props => {
+const Layout404 = _props => {
+  const router = useRouter()
+  
+  // 3 秒後自動跳轉到首頁
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push('/')
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [router])
+  
   return (
     <>
       {/* <!-- ====== 404 Section Start --> */}
-      <section className='bg-white py-20 dark:bg-dark-2 lg:py-[110px]'>
+      <section className='bg-gray-50 dark:bg-gray-900 py-20 lg:py-[110px] min-h-screen flex items-center'>
         <div className='container mx-auto'>
-          <div className='flex flex-wrap items-center -mx-4'>
-            <div className='w-full px-4 md:w-5/12 lg:w-6/12'>
-              <div className='text-center'>
-                <img
-                  src='/images/starter/404.svg'
-                  alt='image'
-                  className='max-w-full mx-auto'
-                />
+          <div className='flex flex-col items-center justify-center'>
+            <div className='text-center'>
+              {/* 使用 SVG404 組件替代外部圖片 */}
+              <div className='mb-12 flex justify-center'>
+                <SVG404 />
               </div>
-            </div>
-            <div className='w-full px-4 md:w-7/12 lg:w-6/12 xl:w-5/12'>
-              <div>
-                <div className='mb-8'>
-                  <SVG404 />
-                </div>
-                <h3 className='mb-5 text-2xl font-semibold text-dark dark:text-white'>
-                  {siteConfig('STARTER_404_TITLE')}
-                </h3>
-                <p className='mb-8 text-base text-body-color dark:text-dark-6'>
-                  {siteConfig('STARTER_404_TEXT')}
-                </p>
-                <SmartLink
-                  href='/'
-                  className='py-3 text-base font-medium text-white transition rounded-md bg-dark px-7 hover:bg-primary'>
-                  {siteConfig('STARTER_404_BACK')}
-                </SmartLink>
-              </div>
+              
+              <h3 className='mb-6 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl'>
+                {siteConfig('STARTER_404_TITLE') || '找不到您要的頁面'}
+              </h3>
+              
+              <p className='mb-8 text-lg text-gray-600 dark:text-gray-400 max-w-md mx-auto'>
+                {siteConfig('STARTER_404_TEXT') || '抱歉！您所查找的頁面不存在或已被移除。'}
+              </p>
+              
+              <p className='mb-8 text-sm text-gray-500 dark:text-gray-500'>
+                3 秒後將自動跳轉至首頁...
+              </p>
+              
+              <SmartLink
+                href='/'
+                className='inline-flex items-center py-3 px-8 text-base font-medium text-white bg-primary rounded-lg hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl'>
+                {siteConfig('STARTER_404_BACK') || '返回首頁'}
+              </SmartLink>
             </div>
           </div>
         </div>
@@ -396,13 +402,14 @@ const LayoutPostList = props => {
     </>
   )
 }
+
 /**
  * 分类列表
- * @param {*} props
+ * @param {*} _props
  * @returns
  */
-const LayoutCategoryIndex = props => {
-  const { categoryOptions } = props
+const LayoutCategoryIndex = _props => {
+  const { categoryOptions } = _props
   const { locale } = useGlobal()
   return (
     <section className='bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]'>
@@ -438,11 +445,11 @@ const LayoutCategoryIndex = props => {
 
 /**
  * 标签列表
- * @param {*} props
+ * @param {*} _props
  * @returns
  */
-const LayoutTagIndex = props => {
-  const { tagOptions } = props
+const LayoutTagIndex = _props => {
+  const { tagOptions } = _props
   const { locale } = useGlobal()
   return (
     <section className='bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]'>
@@ -474,12 +481,13 @@ const LayoutTagIndex = props => {
     </section>
   )
 }
+
 /**
  * 登录页面
- * @param {*} props
+ * @param {*} _props
  * @returns
  */
-const LayoutSignIn = props => {
+const LayoutSignIn = _props => {
   const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
   const title = siteConfig('STARTER_SIGNIN', '登录')
   const description = siteConfig(
@@ -506,10 +514,10 @@ const LayoutSignIn = props => {
 
 /**
  * 注册页面
- * @param {*} props
+ * @param {*} _props
  * @returns
  */
-const LayoutSignUp = props => {
+const LayoutSignUp = _props => {
   const enableClerk = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
 
   const title = siteConfig('STARTER_SIGNIN', '注册')

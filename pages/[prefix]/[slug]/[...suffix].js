@@ -23,7 +23,7 @@ export async function getStaticPaths() {
   if (!BLOG.isProd) {
     return {
       paths: [],
-      fallback: true
+      fallback: 'blocking'
     }
   }
 
@@ -40,7 +40,7 @@ export async function getStaticPaths() {
     }))
   return {
     paths: paths,
-    fallback: true
+    fallback: 'blocking'
   }
 }
 
@@ -78,8 +78,13 @@ export async function getStaticProps({
   }
 
   if (!props?.post) {
-    // 无法获取文章
-    props.post = null
+    // 无法获取文章，直接重定向到首页
+    return {
+      redirect: {
+        destination: '/',
+        permanent: false
+      }
+    }
   } else {
     await processPostData(props, from)
   }

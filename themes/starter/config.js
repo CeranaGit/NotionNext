@@ -120,21 +120,21 @@ const CONFIG = {
   STARTER_TESTIMONIALS_ITEMS: [
     {
       STARTER_TESTIMONIALS_ITEM_TEXT: '他們的團隊非常專業且反應迅速，一步一步的幫住我們完成軟體規劃，並且在過程中不斷的提供專業的建議，讓我們在流程數位化的過程中，能夠更加順利。',
-      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client1.jpg',
+      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/author-01.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '陳先生',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '製造業負責人',
       STARTER_TESTIMONIALS_ITEM_URL: ''
     },
     {
       STARTER_TESTIMONIALS_ITEM_TEXT: '溝通的時候都非常有耐心，而且有些我們沒發現的痛點也會被指出來。極力推薦！最終成品有效解決我們的問題、助教老師再也不用半夜收信來回答學生問題。',
-      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client2.jpg', 
+      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/author-02.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '鄭先生',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '大學行政人員',
       STARTER_TESTIMONIALS_ITEM_URL: ''
     },
     {
       STARTER_TESTIMONIALS_ITEM_TEXT: '他們的技術團隊不僅理解我們的需求，還能精準地將創意轉化為實際的應用程式。從提案到落地，過程順暢且專業，也成功讓我們的產品在區域競賽中奪得佳績。',
-      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/client3.jpg',
+      STARTER_TESTIMONIALS_ITEM_AVATAR: '/images/starter/testimonials/author-03.png',
       STARTER_TESTIMONIALS_ITEM_NICKNAME: '林小姐',
       STARTER_TESTIMONIALS_ITEM_DESCRIPTION: '廣告相關業者',
       STARTER_TESTIMONIALS_ITEM_URL: ''
