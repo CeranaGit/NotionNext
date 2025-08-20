@@ -6,11 +6,11 @@ import SmartLink from '@/components/SmartLink'
 
 /* eslint-disable @next/next/no-img-element */
 export const Footer = props => {
-  // const footerPostCount = siteConfig('STARTER_FOOTER_POST_COUNT', 2)
-  // const latestPosts = props?.latestPosts
-  //   ? props?.latestPosts.slice(0, footerPostCount)
-  //   : []
-  // const STARTER_FOOTER_LINK_GROUP = siteConfig('STARTER_FOOTER_LINK_GROUP', [])
+  const footerPostCount = siteConfig('STARTER_FOOTER_POST_COUNT', 2)
+  const latestPosts = props?.latestPosts
+    ? props?.latestPosts.slice(0, footerPostCount)
+    : []
+  const STARTER_FOOTER_LINK_GROUP = siteConfig('STARTER_FOOTER_LINK_GROUP', [])
   return (
     <>
       {/* <!-- ====== Footer Section Start --> */}
