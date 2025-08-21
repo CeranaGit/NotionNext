@@ -14,15 +14,18 @@ export const Hero = props => {
       {/* <!-- ====== Hero Section Start --> */}
       <div
         id='home'
-        className='relative overflow-hidden pt-48 md:pt-64 pb-48 md:pb-64'
-        style={{
-          backgroundImage: `url(${siteConfig('STARTER_HERO_BACKGROUND_IMAGE', null, config)})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat'
-        }}>
+        className='relative overflow-hidden h-screen flex items-center'>
+        {/* 背景影片 */}
+        <video
+          src={siteConfig('STARTER_HERO_BACKGROUND_VIDEO', null, config)}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className='absolute top-0 left-0 w-full h-full object-cover z-[-1]'
+        />
         {/* Add a dark overlay for better text readability */}
-        <div className='absolute inset-0 bg-black/60'></div>
+        <div className='absolute inset-0 bg-black/20'></div>
         <div className='container relative z-10'>
           <div className='-mx-4 flex flex-wrap items-center'>
             <div className='w-full px-4'>
@@ -42,7 +45,7 @@ export const Hero = props => {
                   {siteConfig('STARTER_HERO_BUTTON_1_TEXT', null, config) && (
                     <li>
                       <SmartLink
-                        href={siteConfig('STARTER_HERO_BUTTON_1_URL', '')}
+                        href="mailto:cerana.mail@gmail.com"
                         className='inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2 hover:text-body-color'>
                         {siteConfig('STARTER_HERO_BUTTON_1_TEXT', null, config)}
                       </SmartLink>
