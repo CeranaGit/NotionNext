@@ -76,13 +76,13 @@ export const Blog = ({ posts }) => {
       {/* 更多按钮 */}
       <div className="w-full h-20 bg-white dark:bg-dark">
         <div className='container mx-auto flex justify-center mb-4'>
-          <Link 
+          <SmartLink 
                 className='bg-primary text-white px-6 py-2 rounded-xl flex items-center hover:bg-primary/80 transition-colors' 
                 href={'/archive'}
               >
                 <span>更多</span>
                 <i className='ml-2 fas fa-arrow-right' />
-            </Link>
+            </SmartLink>
           </div>
       </div>
     </>
